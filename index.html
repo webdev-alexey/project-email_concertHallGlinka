@@ -57,6 +57,10 @@
           display: none !important;
         }
 
+        .mobile-hero-padding {
+          padding: 0 10px !important;
+        }
+
         .two-columns .column,
         .three-columns .column,
         .four-column .column {
@@ -68,7 +72,15 @@
         .three-columns .column img,
         .four-columns .column img {
           width: 100% !important;
-          max-width: 194px !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns-mini-image .column img {
+          max-width: 93px !important;
+        }
+
+        .mobile-bottom-padding {
+          padding-bottom: 0 !important;
         }
 
         .three-columns table {
@@ -79,6 +91,12 @@
         .three-columns tr {
           width: 100% !important;
           max-width: 100% !important;
+        }
+
+        .social-columns,
+        .social-columns .column {
+          max-width: none !important;
+          width: 30px !important;
         }
       }
 
@@ -286,7 +304,7 @@
                         <!--[if (gte mso 9)|(IE)]>
                           <td style="padding-top: 90px;padding-bottom: 74px; padding-left: 20px; padding-right: 20px;">
                         <![endif]-->
-                        <td style="padding: 0 40px">
+                        <td style="padding: 0 40px" class="mobile-hero-padding">
                           <table
                             border="0"
                             cellspacing="0"
@@ -633,7 +651,7 @@
             <td
               align="center"
               style="padding: 30px; font-size: 0; background-color: #06080b"
-              class="two-columns mobile-padding bg-2"
+              class="two-columns mobile-padding bg-2 two-columns-mini-image"
             >
               <!--[if (gte mso 9)|(IE)]>
                 <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -656,7 +674,7 @@
                 <tr>
                   <td
                     style="padding: 20px 10px 20px 10px"
-                    class="mobile-col-padding"
+                    class="mobile-col-padding mobile-bottom-padding"
                   >
                     <table
                       border="0"
@@ -789,6 +807,7 @@
                     class="mobile-col-padding"
                   >
                     <table
+                      width="100%"
                       border="0"
                       cellspacing="0"
                       cellpadding="0"
@@ -847,6 +866,7 @@
                     class="mobile-col-padding"
                   >
                     <table
+                      width="100%"
                       border="0"
                       cellspacing="0"
                       cellpadding="0"
@@ -905,6 +925,7 @@
                     class="mobile-col-padding"
                   >
                     <table
+                      width="100%"
                       border="0"
                       cellspacing="0"
                       cellpadding="0"
@@ -978,10 +999,7 @@
                       style="vertical-align: middle; display: inline-block"
                     >
                       <tr>
-                        <td
-                          style="padding: 5px 15px"
-                          class="mobile-col-padding"
-                        >
+                        <td style="padding: 5px 15px">
                           <table
                             border="0"
                             cellspacing="0"
@@ -1022,10 +1040,7 @@
                       style="vertical-align: middle; display: inline-block"
                     >
                       <tr>
-                        <td
-                          style="padding: 5px 15px"
-                          class="mobile-col-padding"
-                        >
+                        <td style="padding: 5px 15px">
                           <table
                             border="0"
                             cellspacing="0"
@@ -1066,10 +1081,7 @@
                       style="vertical-align: middle; display: inline-block"
                     >
                       <tr>
-                        <td
-                          style="padding: 5px 15px"
-                          class="mobile-col-padding"
-                        >
+                        <td style="padding: 5px 15px">
                           <table
                             border="0"
                             cellspacing="0"
