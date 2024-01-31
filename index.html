@@ -9,8 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="color-scheme" content="light dark" />
-      <meta name="supported-color-schemes" content="light dark" /> -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>Концертный зал им. Глинки</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
@@ -82,48 +82,52 @@
         }
       }
 
-      /* :root {
-          color-scheme: light dark;
-          supported-color-schemes: light dark;
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        table,
+        td {
+          background-color: #06080b !important;
         }
 
-        @media (prefers-color-scheme: dark) {
-          table,
-          td {
-            background-color: #000 !important;
-          }
+        h1,
+        h2,
+        h3,
+        p {
+          color: #fff !important;
+        }
 
-          h1,
-          h2,
-          h3,
-          p {
-            color: #fff !important;
-          }
+        .bg,
+        .bg table,
+        .bg td {
+          background-color: transparent !important;
+        }
 
-          .bg,
-          .bg table,
-          .bg td {
-            background-color: #fff !important;
-          }
+        .bg-2,
+        .bg-2 table,
+        .bg-2 td {
+          background-color: #fff !important;
+        }
 
-          .bg h2,
-          .bg h3,
-          .bg p {
-            color: #344262 !important;
-          }
+        .bg-2 h2,
+        .bg-2 p {
+          color: #06080b !important;
+        }
 
-          .bg-2,
-          .bg-2 table,
-          .bg-2 td {
-            background-color: #f5f5f5 !important;
-          }
+        .social-columns,
+        .social-columns td,
+        .social-columns table {
+          background-color: #bc3619 !important;
+        }
 
-          .bg-2 h2,
-          .bg-2 h3,
-          .bg-2 p {
-            color: #344262 !important;
-          }
-        } */
+        .unsub-link {
+          color: #ffffff !important;
+          border-color: #ffffff !important;
+        }
+      }
     </style>
     <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
@@ -276,6 +280,7 @@
                       cellspacing="0"
                       cellpadding="0"
                       role="presentation"
+                      class="bg"
                     >
                       <tr>
                         <!--[if (gte mso 9)|(IE)]>
@@ -628,7 +633,7 @@
             <td
               align="center"
               style="padding: 30px; font-size: 0; background-color: #06080b"
-              class="two-columns mobile-padding"
+              class="two-columns mobile-padding bg-2"
             >
               <!--[if (gte mso 9)|(IE)]>
                 <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -1129,6 +1134,7 @@
                   color: #06080b;
                   border-bottom: 1px solid #06080b;
                 "
+                class="unsub-link"
               >
                 отписаться от рассылки
               </a>
